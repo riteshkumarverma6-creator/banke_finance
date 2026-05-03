@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIC Housing Finance Limited | Trusted Loan Assistance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container top-bar__content">
+      <div class="top-bar__item">
+        <span>📞</span>
+        <a href="tel:+918874013261">+91 88740 13261</a>
+      </div>
+      <div class="top-bar__item">
+        <span>✉️</span>
+        <a href="mailto:contact@primeloanadvisory.com">contact@primeloanadvisory.com</a>
+      </div>
+      <div class="top-bar__item top-bar__whatsapp">
+        <span>💬</span>
+        <a href="https://wa.me/917985512592" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#home" class="brand">LIC Housing Finance</a>
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#emi-calculator">EMI Calculator</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Enquiry</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow">Premium Loan Advisory</span>
+          <h1>Fast & Trusted Loan Assistance</h1>
+          <p>Secure the right loan plan for your dream home, business expansion, or asset finance with expert guidance and fast approvals.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn-primary">Apply Now</a>
+            <a href="https://wa.me/917985512592" target="_blank" rel="noopener" class="btn btn-secondary">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="hero__visual card-soft">
+          <div class="hero__visual-card">
+            <div class="hero__visual-image"></div>
+            <div class="hero__visual-info">
+              <p>Home Loan support with flexible options</p>
+              <span>Approval support across banks & NBFCs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container section__header">
+        <p class="section__eyebrow">Our Financial Services</p>
+        <h2>Loan solutions designed for every need</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Home Loan</h3>
+          <p>Competitive home loan options to help you buy, build or renovate your ideal home.</p>
+        </article>
+        <article class="service-card">
+          <h3>Property Loan</h3>
+          <p>Easy financing for commercial and residential property purchases.</p>
+        </article>
+        <article class="service-card">
+          <h3>Loan Against Property</h3>
+          <p>Leverage your property to secure a low-interest loan for personal or business needs.</p>
+        </article>
+        <article class="service-card">
+          <h3>Bike Finance</h3>
+          <p>Flexible two-wheeler financing with fast approvals and clear EMIs.</p>
+        </article>
+        <article class="service-card">
+          <h3>Mobile Finance</h3>
+          <p>Simple mobile financing plans for the latest smartphones and devices.</p>
+        </article>
+        <article class="service-card">
+          <h3>Business Loan</h3>
+          <p>Working capital and growth financing tailored for small and medium enterprises.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section why-us" id="why-us">
+      <div class="container section__header">
+        <p class="section__eyebrow">Why Choose PrimeLoan</p>
+        <h2>Trusted guidance that delivers value</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Quick Process</h3>
+          <p>End-to-end support that helps you move from application to approval faster.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Trusted Guidance</h3>
+          <p>Expert advice on documents, lenders, and optimal repayment plans.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Low EMI Options</h3>
+          <p>Customized plans to keep your monthly installments manageable.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Document Support</h3>
+          <p>Complete assistance to prepare and submit documents accurately.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Bank/NBFC Tie-up Support</h3>
+          <p>Relationships with multiple partners improve your approval chances.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator" id="emi-calculator">
+      <div class="container calculator__layout">
+        <div class="calculator__info">
+          <p class="section__eyebrow">EMI Calculator</p>
+          <h2>Estimate your monthly payment instantly</h2>
+          <p>Enter your loan details to see your EMI, total interest and total payment. This tool helps you compare different loan plans quickly.</p>
+        </div>
+        <div class="calculator__card card-soft">
+          <form id="emi-form" class="calculator-form">
+            <div class="form-row">
+              <label for="loan-amount">Loan Amount</label>
+              <input type="number" id="loan-amount" name="loanAmount" min="10000" step="1000" placeholder="Enter amount" required />
+            </div>
+            <div class="form-row">
+              <label for="interest-rate">Interest Rate (%)</label>
+              <input type="number" id="interest-rate" name="interestRate" min="0" step="0.01" placeholder="Annual rate" required />
+            </div>
+            <div class="form-row">
+              <label for="tenure-months">Tenure (Months)</label>
+              <input type="number" id="tenure-months" name="tenureMonths" min="6" step="1" placeholder="12" required />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate EMI</button>
+          </form>
+          <div class="calculator-results" id="calculator-results">
+            <div class="result-item">
+              <span>Monthly EMI</span>
+              <strong id="emi-output">₹0</strong>
+            </div>
+            <div class="result-item">
+              <span>Total Interest</span>
+              <strong id="interest-output">₹0</strong>
+            </div>
+            <div class="result-item">
+              <span>Total Payment</span>
+              <strong id="payment-output">₹0</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section documents" id="documents">
+      <div class="container section__header">
+        <p class="section__eyebrow">Documents Required</p>
+        <h2>Prepare your documents for a smooth application</h2>
+      </div>
+      <div class="document-grid">
+        <div class="document-card">Aadhaar Card</div>
+        <div class="document-card">PAN Card</div>
+        <div class="document-card">Bank Statement</div>
+        <div class="document-card">Income Proof</div>
+        <div class="document-card">Property Papers if applicable</div>
+        <div class="document-card">Passport Size Photo</div>
+      </div>
+    </section>
+
+    <section class="section enquiry" id="contact">
+      <div class="container enquiry__layout">
+        <div class="enquiry__text">
+          <p class="section__eyebrow">Lead Enquiry</p>
+          <h2>Start your loan application today</h2>
+          <p>Share your details and one of our loan experts will contact you with personalized options.</p>
+        </div>
+        <div class="enquiry__form card-soft">
+          <form id="lead-form" action="https://formsubmit.co/riteshkumarverma6@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New loan enquiry from LIC Housing Finance website" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-row">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="Full Name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="mobile-number">Mobile Number</label>
+              <input type="tel" id="mobile-number" name="Mobile Number" placeholder="10-digit mobile" pattern="[0-9]{10}" required />
+            </div>
+            <div class="form-row">
+              <label for="city">City</label>
+              <input type="text" id="city" name="City" placeholder="City" required />
+            </div>
+            <div class="form-row">
+              <label for="loan-type">Loan Type</label>
+              <select id="loan-type" name="Loan Type" required>
+                <option value="">Select loan type</option>
+                <option value="home-loan">Home Loan</option>
+                <option value="property-loan">Property Loan</option>
+                <option value="lap">Loan Against Property</option>
+                <option value="bike-finance">Bike Finance</option>
+                <option value="mobile-finance">Mobile Finance</option>
+                <option value="business-loan">Business Loan</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="loan-amount-enquiry">Loan Amount</label>
+              <input type="number" id="loan-amount-enquiry" name="Loan Amount" min="10000" step="1000" placeholder="Desired amount" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="4" placeholder="Tell us about your requirements" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+            <p class="form-success" id="form-success" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container section__header">
+        <p class="section__eyebrow">Client Testimonials</p>
+        <h2>Trusted by borrowers across the country</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card card-soft">
+          <p>"PrimeLoan helped me get the best home loan plan with minimal paperwork. The team was extremely proactive and clear."</p>
+          <strong>– Priya S.</strong>
+        </article>
+        <article class="testimonial-card card-soft">
+          <p>"Their property loan service was professional, fast, and very supportive. I felt confident through every step."</p>
+          <strong>– Rohit K.</strong>
+        </article>
+        <article class="testimonial-card card-soft">
+          <p>"Excellent guidance on loan against property and EMI structuring. Their support saved me time and interest."</p>
+          <strong>– Sneha M.</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container section__header">
+        <p class="section__eyebrow">Frequently Asked Questions</p>
+        <h2>Answers to common loan queries</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How long does approval take?</h3>
+          <p>Typically 3-7 business days after document submission, depending on lender review and verification timelines.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I apply with a low credit score?</h3>
+          <p>Yes, we work with partner lenders who may consider applications with moderate scores based on income and document strength.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need property documents for all loans?</h3>
+          <p>If you apply for property-related or LAP loans, relevant property papers are required. For bike and mobile finance, ID and income proofs are enough.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are there hidden charges?</h3>
+          <p>We prioritize transparency. All costs are shared upfront and any lender fees are discussed before you proceed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/917985512592" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="brand footer__brand">LIC Housing Finance</a>
+        <p>Trusted NBFC advisory for property, business and asset finance with smart EMI solutions.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 +91 88740 13261</p>
+        <p>📱 +91 79855 12592</p>
+        <p>✉️ contact@primeloanadvisory.com</p>
+        <p>🏢 LIC Housing Finance Limited<br>Office: Deokali Bypass<br>Faizabad, U.P. – 224001</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#emi-calculator">Calculator</a>
+        <a href="#contact">Apply Now</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Home Loan</a>
+        <a href="#services">Loan Against Property</a>
+        <a href="#services">Business Loan</a>
+      </div>
+    </div>
+    <div class="footer__disclaimer">
+      <p>Loan approval depends on bank/NBFC eligibility, documents, credit score, and internal policies. We do not guarantee approval.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
