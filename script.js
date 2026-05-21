@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  leadForm.addEventListener('submit', function (event) {
+  leadForm.addEventListener('submit', async function (event) {
     event.preventDefault();
     const name = document.getElementById('full-name');
     const mobile = document.getElementById('mobile-number');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const amount = document.getElementById('loan-amount-enquiry');
     const message = document.getElementById('message');
 
-    const phonePattern = /^\d{10}$/;
+    const phoneDigits = mobile.value.replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '');
     let valid = true;
     let errorMessage = '';
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
       valid = false;
       errorMessage = 'Please enter your name.';
       name.focus();
-    } else if (!phonePattern.test(mobile.value.trim())) {
+    } else if (!/^\d{10}$/.test(phoneDigits)) {
       valid = false;
       errorMessage = 'Please enter a valid 10-digit mobile number.';
       mobile.focus();
@@ -108,7 +108,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
     formSuccess.style.color = '#245b3f';
     formSuccess.textContent = 'Submitting your enquiry...';
-    leadForm.submit();
+
+    try {
+      const formData = new FormData(leadForm);
+      formData.set('Mobile Number', phoneDigits);
+
+      const response = await fetch(leadForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      leadForm.reset();
+      formSuccess.style.color = '#245b3f';
+      formSuccess.textContent = 'Thank you. Your enquiry has been submitted successfully.';
+    } catch (error) {
+      formSuccess.style.color = '#c0392b';
+      formSuccess.textContent = 'Unable to submit right now. Please call 7985512592 or try again after confirming FormSubmit email activation.';
+    }
   });
 
   emiForm.addEventListener('submit', function (event) {
