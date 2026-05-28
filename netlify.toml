@@ -58,25 +58,40 @@
 
 [[redirects]]
   from = "/home-loan"
-  to = "/index.html"
-  status = 200
+  to = "/home-loan/"
+  status = 301
 
 [[redirects]]
   from = "/personal-loan"
-  to = "/index.html"
-  status = 200
+  to = "/personal-loan/"
+  status = 301
 
 [[redirects]]
   from = "/property-loan"
-  to = "/index.html"
-  status = 200
+  to = "/property-loan/"
+  status = 301
 
 [[redirects]]
   from = "/vehicle-finance"
-  to = "/index.html"
-  status = 200
+  to = "/vehicle-loan/"
+  status = 301
 
 [[redirects]]
   from = "/business-loan"
-  to = "/index.html"
-  status = 200
+  to = "/business-loan/"
+  status = 301
+
+[[redirects]]
+  from = "/vehicle-loan"
+  to = "/vehicle-loan/"
+  status = 301
+
+[[redirects]]
+  from = "/loan-against-property"
+  to = "/loan-against-property/"
+  status = 301
+
+[[redirects]]
+  from = "/cibil-score-help"
+  to = "/cibil-score-help/"
+  status = 301
