@@ -20,23 +20,35 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     '/home-loan': {
       title: 'Home Loan in Ayodhya | Aaru Finance Solution',
-      description: 'Get Home Loan in Ayodhya guidance from Aaru Finance Solution for buying, building or renovating a home with simple documentation support and lender guidance.',
+      description: 'Get Home Loan in Ayodhya guidance for buying, building or renovating a house. Aaru Finance Solution supports eligibility, documents, property papers and lender process in Ayodhya and Faizabad.',
     },
     '/personal-loan': {
       title: 'Personal Loan in Ayodhya | Aaru Finance Solution',
-      description: 'Aaru Finance Solution helps customers with Personal Loan in Ayodhya, eligibility guidance, document support, Easy Loan Approval process help and EMI planning.',
+      description: 'Apply for Personal Loan in Ayodhya with Aaru Finance Solution. Get document guidance, eligibility support, EMI planning and local finance consultation in Ayodhya, Faizabad, Uttar Pradesh.',
     },
     '/property-loan': {
-      title: 'Property Loan Consultant Ayodhya | Aaru Finance Solution',
-      description: 'Speak with Aaru Finance Solution for property loan guidance in Ayodhya, loan against property support, documentation help and Low Interest Loan Guidance.',
+      title: 'Property Loan in Ayodhya | Aaru Finance Solution',
+      description: 'Property Loan in Ayodhya guidance for residential or commercial property-backed finance. Get support for eligibility, property documents and bank/NBFC process from Aaru Finance Solution.',
+    },
+    '/vehicle-loan': {
+      title: 'Vehicle Loan in Ayodhya | Aaru Finance Solution',
+      description: 'Vehicle Loan in Ayodhya support for car loan, bike loan and commercial vehicle finance. Aaru Finance Solution helps with eligibility, documents and lender process in Ayodhya, Faizabad.',
     },
     '/vehicle-finance': {
-      title: 'Vehicle Finance Ayodhya | Car, Bike & Commercial Vehicle Loan Help',
-      description: 'Aaru Finance Solution provides Vehicle Finance Ayodhya assistance for car loans, bike loans and commercial vehicle finance with a simple process.',
+      title: 'Vehicle Loan in Ayodhya | Aaru Finance Solution',
+      description: 'Vehicle Loan in Ayodhya support for car loan, bike loan and commercial vehicle finance. Aaru Finance Solution helps with eligibility, documents and lender process in Ayodhya, Faizabad.',
     },
     '/business-loan': {
-      title: 'Business Loan Assistance Ayodhya | Aaru Finance Solution',
-      description: 'Get Business Loan Assistance Ayodhya support from Aaru Finance Solution for shop loans, MSME loan needs and working capital loan guidance.',
+      title: 'Business Loan in Ayodhya | Aaru Finance Solution',
+      description: 'Business Loan in Ayodhya guidance for shop owners, traders, MSMEs and self-employed professionals. Get document, eligibility and working capital loan support from Aaru Finance Solution.',
+    },
+    '/loan-against-property': {
+      title: 'Loan Against Property in Ayodhya | Aaru Finance Solution',
+      description: 'Loan Against Property in Ayodhya guidance for salaried, self-employed and business needs. Get support for documents, eligibility, valuation and lender process from Aaru Finance Solution.',
+    },
+    '/cibil-score-help': {
+      title: 'CIBIL Score Help & Low CIBIL Loan Support in Ayodhya | Aaru Finance Solution',
+      description: 'Get CIBIL Score Help and Low CIBIL Loan Support in Ayodhya. Aaru Finance Solution explains credit profile, document preparation and suitable loan guidance without guaranteed approval claims.',
     },
     '/blog': {
       title: 'Finance Blog Ayodhya | Loan Tips by Aaru Finance Solution',
@@ -53,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function applySeoMeta() {
     const path = window.location.pathname.replace(/\/$/, '') || '/';
     const seo = pageSeo[path] || pageSeo['/'];
-    const canonicalUrl = `${siteUrl}${path === '/' ? '/' : path}`;
+    const canonicalUrl = `${siteUrl}${path === '/' ? '/' : `${path}/`}`;
 
     document.title = seo.title;
     upsertHeadTag('meta[name="description"]', 'meta', { name: 'description', content: seo.description });
